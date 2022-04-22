@@ -33,37 +33,7 @@
                    ]
                 }]
              }
-          },
-
-
-          "A2": {
-            "class": "Application",
-            "app2": {
-               "class": "Service_HTTP",
-               "virtualAddresses": [
-                  "10.0.2.4"
-               ],
-               "virtualPort": 8080,
-               "pool": "web_pool"
-            },
-            "web_pool": {
-               "class": "Pool",
-               "monitors": [
-                  "http"
-               ],
-               "members": [{
-                  "servicePort": 80,
-                  "serverAddresses": [
-                     "10.0.2.5",
-                     "10.0.2.6"
-                  ]
-               }]
-            }
-         }
-
-
-
-
+          }
 
        }
     }
