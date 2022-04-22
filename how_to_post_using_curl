@@ -1,0 +1,9 @@
+## How to do POST
+curl -k --user username:pass -H "Accept: application/json" -H "Content-Type:application/json" -X POST -d@example-http.json https://10.192.74.74:/mgmt/shared/appsvcs/declare | python -m json.tool
+
+## How to do GET
+curl -k --user username:pass -H "Accept: application/json" -H "Content-Type:application/json" -X GET  https://10.192.74.74:/mgmt/shared/appsvcs/declare | python -m json.tool
+
+## How to do DELETE
+
+curl -k --user username:pass -H "Accept: application/json" -H "Content-Type:application/json" -X DELETE  https://10.192.74.74:/mgmt/shared/appsvcs/declare | python -m json.tool
